@@ -24,6 +24,10 @@ img {
   list-style: none;
 }
 
+.link {
+  text-decoration: none;
+}
+
 .team-list {
   display: flex;
   justify-content: space-between;
@@ -35,13 +39,8 @@ img {
   text-align: center;
 }
 
-.team-list-item:hover .overlay {
-  transform: translateY(0);
-}
-
-.team-list-img-wrapper {
-  position: relative;
-  overflow: hidden;
+.team-list-content {
+  padding: 20px 30px;
 }
 
 .team-list-item-name {
@@ -60,38 +59,31 @@ img {
   line-height: 1.846;
 }
 
+.team-list-img-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.team-list-item {
+  position: relative;
+  overflow: hidden;
+}
+
 .overlay {
   position: absolute;
-  top: 0;
   left: 0;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
+  top: 0;
   width: 100%;
   height: 100%;
-  padding-bottom: 32px;
-  background-color: rgba(85, 85, 85, 0.5);
-
+  background-color: rgba(255, 99, 71, 0.6);
+  color: #ffffff;
+  padding: 20px;
+  overflow: scroll;
   transform: translateY(100%);
-  transition: all 500ms linear;
+  transition: transform 250ms linear;
 }
 
-.social-list {
-  display: flex;
-}
-
-.social-list-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 28px;
-  height: 28px;
-}
-
-.social-list-link:hover {
-  background-color: rgb(192, 48, 28);
-}
-
-.social-list-svg {
-  fill: #fff;
+.team-list-link-wrapper:hover .overlay,
+.team-list-link-wrapper:focus .overlay {
+  transform: translateY(0);
 }
