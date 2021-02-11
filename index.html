@@ -314,7 +314,7 @@
         <section class="gallery section-padding">
             <div class="container">
                 <p class="subtitle subtitle-light-theme">На латинском языке “барба” означает “борода”</p>
-                <h2 hidden>Пример работ</h2>
+                <h2 class="visually-hidden">Пример работ</h2>
                 <ul class="gallery-list list">
                     <li class="gallery-list-item">
                         <img class="gallery-list-img" src="./images/gallery/gallery-img-1.jpg"
@@ -381,6 +381,36 @@
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button type="button" class="modal-close-btn" data-modal-close>X</button>
+            <form action="#" class="modal-form">
+
+                <label class="modal-form-input-label">
+                    Имя
+                    <span class="modal-form-input-wrapper">
+                        <input type="text" name="user-name" class="modal-form-input">
+                        <span class="modal-form-icon"></span>
+                    </span>
+                </label>
+
+                <label class="modal-form-input-label">
+                    Телефон
+                    <span class="modal-form-input-wrapper">
+                        <input type="tel" name="user-phone" class="modal-form-input">
+                        <span class="modal-form-icon"></span>
+                    </span>
+                </label>
+
+                <label class="modal-form-input-label">
+                    Комментарий
+                    <textarea name="user-message" class="modal-form-message" placeholder="Введите текст"></textarea>
+                </label>
+
+                <input type="checkbox" name="user-policy" id="policy-check"
+                    class="modal-form-check-policy visually-hidden">
+                <label for="policy-check" class="modal-form-label-policy">Соглашаюсь с рассылкой и принимаю <a
+                        href="">Условия
+                        договора</a> </label>
+                <button type="submit" class="modal-form-btn">отправить</button>
+            </form>
         </div>
     </div>
 
