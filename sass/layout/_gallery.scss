@@ -1,0 +1,13 @@
+.gallery .subtitle {
+  margin-bottom: 44px;
+}
+
+.gallery-list {
+  display: flex;
+  margin: -15px;
+}
+
+.gallery-list-item {
+  width: calc((100% - 90px) / 4);
+  margin: 15px;
+}

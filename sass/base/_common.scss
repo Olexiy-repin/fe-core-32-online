@@ -1,0 +1,41 @@
+body {
+  font-family: var(--text-font);
+  color: #555555;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.address {
+  font-style: normal;
+}
+
+.section-padding {
+  padding-top: 130px;
+  padding-bottom: 130px;
+}
