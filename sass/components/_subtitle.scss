@@ -7,28 +7,32 @@
   letter-spacing: 0.1em;
   text-transform: uppercase;
   margin-bottom: 20px;
-}
 
-.subtitle::before {
-  display: block;
-  width: 60px;
-  height: 1px;
-  content: "";
-  margin-right: 20px;
+  &::before {
+    display: block;
+    width: 60px;
+    height: 1px;
+    content: "";
+    margin-right: 20px;
+  }
+
+  .gallery & {
+    margin-bottom: 44px;
+  }
 }
 
 .subtitle-dark-theme {
   color: rgba(157, 164, 189, 0.6);
+
+  &::before {
+    background-color: rgba(157, 164, 189, 0.6);
+  }
 }
 
 .subtitle-light-theme {
   color: #303030;
-}
 
-.subtitle-dark-theme::before {
-  background-color: rgba(157, 164, 189, 0.6);
-}
-
-.subtitle-light-theme::before {
-  background-color: #303030;
+  &::before {
+    background-color: #303030;
+  }
 }

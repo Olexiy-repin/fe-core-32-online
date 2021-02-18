@@ -1,15 +1,3 @@
-.advantages .container {
-  display: flex;
-}
-
-.advantages .title {
-  margin-bottom: 20px;
-}
-
-.advantages .description {
-  max-width: 460px;
-}
-
 .advantages-left-side {
   padding-left: 100px;
   margin-right: 75px;
@@ -27,14 +15,14 @@
   min-height: 134px;
   padding: 20px 21px;
   background-color: #f7f7f7;
-}
 
-.advantages-list-item:nth-child(even) {
-  margin-top: 30px;
-}
+  &:nth-child(even) {
+    margin-top: 30px;
+  }
 
-.advantages-list-item:not(:nth-child(even)) {
-  margin-right: 30px;
+  &:not(:nth-child(even)) {
+    margin-right: 30px;
+  }
 }
 
 .advantages-list-count {

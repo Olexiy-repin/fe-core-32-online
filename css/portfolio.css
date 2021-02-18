@@ -1,0 +1,153 @@
+/* UTILS */
+:root {
+  --text-font: "Open Sans", sans-serif;
+  --title-font: "Raleway", sans-serif;
+  --accent-color: #ff6c00;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+body {
+  font-family: var(--text-font);
+  color: #555555;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.address {
+  font-style: normal;
+}
+
+.section-padding {
+  padding-top: 130px;
+  padding-bottom: 130px;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+.about .container,
+.advantages .container,
+.hero .container {
+  display: flex;
+}
+
+.footer .container,
+.header .container {
+  display: flex;
+  align-items: center;
+}
+
+.header {
+  position: absolute;
+  width: 100%;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.logotype-img {
+  width: 68px;
+  height: 54px;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.logotype {
+  margin-right: 70px;
+  animation-duration: 1000ms;
+  animation-iteration-count: 2;
+}
+
+.navigation-list {
+  display: flex;
+  align-items: center;
+}
+
+.navigation-list-item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.navigation-list-link {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.333;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+  transition: color 250ms linear;
+}
+
+.navigation-list-link:hover, .navigation-list-link:focus {
+  color: var(--accent-color);
+}
+
+.tel-link {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.333;
+  letter-spacing: 0.1em;
+  margin-left: auto;
+  margin-right: 40px;
+  color: #ffffff;
+  transition: color 250ms linear;
+}
+
+.tel-link:hover, .tel-link:focus {
+  color: var(--accent-color);
+}
+
+.footer {
+  padding-top: 56px;
+  padding-bottom: 56px;
+}
+
+.copyright {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.364;
+  letter-spacing: 0.2em;
+  color: #9da4bd;
+}
+/*# sourceMappingURL=portfolio.css.map */

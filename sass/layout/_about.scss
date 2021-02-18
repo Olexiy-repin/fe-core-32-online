@@ -1,21 +1,9 @@
-.about .container {
-  display: flex;
-}
-
 .about-left-side {
   margin-right: 32px;
 }
 
 .about-right-side {
   padding-left: 32px;
-}
-
-.about .title {
-  margin-bottom: 20px;
-}
-
-.about .description {
-  margin-bottom: 20px;
 }
 
 .about-text {
@@ -27,8 +15,10 @@
   display: flex;
 }
 
-.about-list-item:not(:last-child) {
-  margin-right: 30px;
+.about-list-item {
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .about-text {

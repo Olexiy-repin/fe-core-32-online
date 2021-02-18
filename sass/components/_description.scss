@@ -3,6 +3,18 @@
   font-size: 18px;
   line-height: 1.667;
   letter-spacing: 0.02em;
+
+  .about & {
+    margin-bottom: 20px;
+  }
+
+  .advantages & {
+    max-width: 460px;
+  }
+
+  .hero & {
+    max-width: 400px;
+  }
 }
 
 .description-dark-theme {

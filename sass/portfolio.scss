@@ -1,0 +1,12 @@
+/* UTILS */
+@import "./utils/variables";
+@import "./utils/visually-hidden";
+
+// BASE
+@import "./base/common";
+@import "./base/container";
+
+// LAYOUT
+@import "./layout/header";
+
+@import "./layout/footer";
