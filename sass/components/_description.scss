@@ -1,19 +1,11 @@
 .description {
   font-weight: 400;
-  font-size: 18px;
-  line-height: 1.667;
+  font-size: 16px;
+  line-height: 1.625;
   letter-spacing: 0.02em;
 
   .about & {
     margin-bottom: 20px;
-  }
-
-  .advantages & {
-    max-width: 460px;
-  }
-
-  .hero & {
-    max-width: 400px;
   }
 }
 
@@ -24,3 +16,25 @@
 .description-light-theme {
   color: #555555;
 }
+
+@media screen and (min-width: 1200px) {
+  .description {
+    font-size: 18px;
+    line-height: 1.667;
+  }
+}
+
+// .description {
+//   font-weight: 400;
+//   font-size: 18px;
+//   line-height: 1.667;
+//   letter-spacing: 0.02em;
+
+//   .advantages & {
+//     max-width: 460px;
+//   }
+
+//   .hero & {
+//     max-width: 400px;
+//   }
+// }

@@ -40,13 +40,39 @@
                     </li>
                 </ul>
             </nav>
+            <button type="button" class="burger-btn" data-menu-button>
+                <svg class="burger-icon">
+                    <use href="./images/sprite.svg#burger-icon"></use>
+                </svg>
+            </button>
             <a class="tel-link link" href="tel:+380441111111">+38 044 111 11 11</a>
             <button class="modal-btn modal-btn-dark-theme" type="button" data-modal-open>онлайн-запись</button>
+        </div>
+        <div class="mobile-menu" data-menu>
+            <button type="button" class="mobile-close-btn" data-menu-close>
+                <svg class="close-icon">
+                    <use href="./images/sprite.svg#close-icon"></use>
+                </svg>
+            </button>
+            <ul class="mobile-menu-nav list">
+                <li class="mobile-menu-nav-item">
+                    <a href="" class="mobile-menu-nav-link link">О нас</a>
+                </li>
+                <li class="mobile-menu-nav-item">
+                    <a href="" class="mobile-menu-nav-link link">Услуги и цены</a>
+                </li>
+                <li class="mobile-menu-nav-item">
+                    <a href="" class="mobile-menu-nav-link link">Мастера</a>
+                </li>
+                <li class="mobile-menu-nav-item">
+                    <a href="" class="mobile-menu-nav-link link">Контакты</a>
+                </li>
+            </ul>
         </div>
     </header>
     <main>
         <!-- HERO -->
-        <section class="hero">
+        <!-- <section class="hero">
             <div class="container">
                 <div class="hero-left-side">
                     <ul class="social-links-list list">
@@ -65,7 +91,7 @@
                         Работаем быстро, осторожно и со вкусом.</p>
                 </div>
             </div>
-        </section>
+        </section> -->
 
         <!-- ABOUT US -->
         <section class="about section-padding">
@@ -73,12 +99,43 @@
                 <div class="about-left-side">
                     <ul class="about-list list">
                         <li class="about-list-item">
-                            <img class="about-list-img" src="./images/about/about-img-1.jpg"
-                                alt="мастер бреет бороду клиенту" width="270" height="445">
+                            <picture>
+                                <source
+                                    srcset="./images/about/img-desktop-01.webp 1x, ./images/about/img-desktop-01@2x.webp 2x"
+                                    media="(min-width: 1200px)" type="image/webp">
+                                <source
+                                    srcset="./images/about/img-desktop-01.jpg 1x, ./images/about/img-desktop-01@2x.jpg 2x"
+                                    media="(min-width: 1200px)">
+
+                                <source
+                                    srcset="./images/about/img-tablet-01.webp 1x, ./images/about/img-tablet-01@2x.webp 2x"
+                                    media="(min-width: 768px)" type="image/webp">
+                                <source
+                                    srcset="./images/about/img-tablet-01.jpg 1x, ./images/about/img-tablet-01@2x.jpg 2x"
+                                    media="(min-width: 768px)">
+
+                                <img class="about-list-img" src="./images/about/img-tablet-01.jpg"
+                                    alt="мастер бреет бороду клиенту">
+                            </picture>
                         </li>
                         <li class="about-list-item">
-                            <img class="about-list-img" src="./images/about/about-img-2.jpg"
-                                alt="мастер стрижет клиента" width="270" height="445">
+                            <picture>
+                                <source
+                                    srcset="./images/about/img-desktop-02.webp 1x, ./images/about/img-desktop-02@2x.webp 2x"
+                                    media="(min-width: 1200px)" type="image/webp">
+                                <source
+                                    srcset="./images/about/img-desktop-02.jpg 1x, ./images/about/img-desktop-02@2x.jpg 2x"
+                                    media="(min-width: 1200px)">
+
+                                <source
+                                    srcset="./images/about/img-tablet-02.webp 1x, ./images/about/img-tablet-02@2x.webp 2x"
+                                    media="(min-width: 768px)" type="image/webp">
+                                <source
+                                    srcset="./images/about/img-tablet-02.jpg 1x, ./images/about/img-tablet-02@2x.jpg 2x"
+                                    media="(min-width: 768px)">
+                                <img class="about-list-img" src="./images/about/img-tablet-02.jpg"
+                                    alt="мастер стрижет клиента">
+                            </picture>
                         </li>
                     </ul>
                 </div>
@@ -99,7 +156,7 @@
         </section>
 
         <!-- SERVICES -->
-        <section class="services section-padding">
+        <!-- <section class="services section-padding">
             <div class="container">
                 <p class="subtitle subtitle-dark-theme">Проведи время в компании лучших мастеров</p>
                 <h2 class="title title-dark-theme">Услуги и цены</h2>
@@ -150,10 +207,10 @@
                 <button class="modal-btn modal-btn-dark-theme" type="button">онлайн-запись</button>
             </div>
 
-        </section>
+        </section> -->
 
         <!-- ADVANTAGES -->
-        <section class="advantages section-padding">
+        <!-- <section class="advantages section-padding">
             <div class="container">
                 <div class="advantages-left-side">
                     <ul class="advantages-list list">
@@ -184,10 +241,10 @@
                         прочитать. </p>
                 </div>
             </div>
-        </section>
+        </section> -->
 
         <!-- MASTERS -->
-        <section class="masters section-padding">
+        <!-- <section class="masters section-padding">
             <div class="container">
                 <p class="subtitle subtitle-light-theme">для настоящих ценителей атмосферы</p>
                 <h2 class="title title-light-theme">Наши мастера</h2>
@@ -308,10 +365,10 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> -->
 
         <!-- GALLERY -->
-        <section class="gallery section-padding">
+        <!-- <section class="gallery section-padding">
             <div class="container">
                 <p class="subtitle subtitle-light-theme">На латинском языке “барба” означает “борода”</p>
                 <h2 class="visually-hidden">Пример работ</h2>
@@ -334,15 +391,15 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> -->
 
         <!-- CONTACT FORM -->
-        <section class="contact-form-section">
+        <!-- <section class="contact-form-section">
             <h2 class="title">Онлайн-запись</h2>
-        </section>
+        </section> -->
 
         <!-- CONTACT INFORMATION -->
-        <section class="contact-information">
+        <!-- <section class="contact-information">
             <h2 class="title">Контакты</h2>
             <address class="address">
                 <ul class="contact-information-list list">
@@ -362,9 +419,9 @@
             </address>
             <p class="subtitle">время работы</p>
             <p class="contact-information-date">Ежедневно с 9:00 до 22:00</p>
-        </section>
+        </section> -->
     </main>
-    <footer class="footer">
+    <!-- <footer class="footer">
         <div class="container">
             <p class="copyright">&#xa9; Copyright 2020</p>
             <ul class="social-links-list  list">
@@ -376,7 +433,7 @@
                 </li>
             </ul>
         </div>
-    </footer>
+    </footer> -->
 
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
@@ -416,6 +473,7 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>

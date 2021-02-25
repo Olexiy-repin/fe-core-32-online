@@ -1,13 +1,17 @@
 .title {
   font-family: var(--title-font);
   font-weight: 700;
-  font-size: 42px;
-  line-height: 1.167;
+  font-size: 28px;
+  line-height: 1.179;
   letter-spacing: 0.05em;
 
   .about &,
   .advantages & {
     margin-bottom: 20px;
+  }
+
+  .about & {
+    max-width: 310px;
   }
 
   .masters &,
@@ -22,4 +26,15 @@
 
 .title-light-theme {
   color: #303030;
+}
+
+@media screen and (min-width: 1200px) {
+  .title {
+    font-size: 42px;
+    line-height: 1.167;
+
+    .about & {
+      max-width: none;
+    }
+  }
 }

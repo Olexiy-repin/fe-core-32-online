@@ -27,3 +27,11 @@
 .modal-btn-dark-theme {
   color: #ffffff;
 }
+
+@media screen and (max-width: 767px) {
+  .modal-btn {
+    .header & {
+      display: none;
+    }
+  }
+}
